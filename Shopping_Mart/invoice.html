@@ -1,0 +1,128 @@
+<html>
+<head>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/design.css" />
+</head>
+<body>
+<div center>
+<style>
+body{
+margin-top:60px;
+}
+table{
+height:1000px;
+width:600px;
+}
+</style>
+<center>
+	<script>window.print();</script>
+	<table border="3">
+		<tr><td colspan="2"><center><h3>Invoice</center></h3></td> </tr>
+		<tr><td colspan="2"><center><img style="margin:30px;height:30%;" src="images/logo.png"><h4>A2Z Shopping Mart</h4></center></td> </tr>
+		<tr><td colspan="2"><center><h3>Shipping Details</center></h3></td> </tr>
+		<tr>
+			<td>
+				<p><b>Name:</b></p>
+			</td>
+			<td>
+				<span id="name"></span>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<p><b>Email:</b></p>
+			</td>
+			<td>
+				<span id="mail"></span>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<p ><b>Address:</b></p>
+			</td>
+			<td>
+				<span id="addr"></span>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<p ><b>City:</b></p>
+			</td>
+			<td>
+				<span id="cty"></span>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<p ><b>Contact:</b></p>
+			</td>
+			<td>
+				<span id="cont"></span>
+			</td>
+		</tr>
+		<tr><td colspan="2"><center><h3>Payment Detail</center></h3></td> </tr>
+		<tr>
+			<td>
+				<p ><b>Name on card:</b></p>
+			</td>
+			<td>
+				<span id="NOC"></span>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<p ><b>Card Number:</b></p>
+			</td>
+			<td>
+				<span id="cardno"></span>
+			</td>
+		</tr>
+		<tr><td colspan="2"><center><h3>product Description</center></h3></td> </tr>
+		<tr>
+			<td>
+				<p ><b>Product Details:</b></p>
+			</td>
+			<td>
+				<span id="det"></span>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<p ><b>Total Amount </b></p>
+			</td>
+			<td>
+				<span id="Amnt"></span>
+			</td>
+		</tr>
+		<tr><td colspan="2"><center><h5>Payment Successfull done using card</center></h5></td> </tr>
+		<tr><td colspan="2"><center><h5>Thank You For Shopping With Us!!</center></h5></td> </tr>
+			
+
+		
+
+	</table>
+	</center>
+	</div>
+
+
+
+
+
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/function.js" ></script>
+<script>
+document.getElementById("name").innerHTML = localStorage.getItem("name");
+document.getElementById("mail").innerHTML = localStorage.getItem("email");
+document.getElementById("addr").innerHTML = localStorage.getItem("address");
+document.getElementById("cty").innerHTML = localStorage.getItem("city");
+document.getElementById("cont").innerHTML = localStorage.getItem("contact");
+document.getElementById("det").innerHTML = localStorage.getItem("rowitemms");
+document.getElementById("Amnt").innerHTML = localStorage.getItem("total");
+document.getElementById("NOC").innerHTML = localStorage.getItem("cardname");
+document.getElementById("cardno").innerHTML = localStorage.getItem("cardnum");
+</script>
+</body>
+</html>

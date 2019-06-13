@@ -1,0 +1,1277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/design.css" />
+  
+  <style type="text/css">
+  h1{
+  text-align:center;
+  }
+  #para{
+  text-align:center;
+  }
+  .navbar-default .navbar-brand {
+    color: #fff;
+  }
+  .navbar-default .navbar-nav>li>a {
+    color: #fff;
+  }
+  footer{
+  margin-top:15px;
+  margin-left:20px;
+  text-align:right;
+  }
+  #myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: blue;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+  
+  </style>
+</head>
+<body>
+<button class="btn btn-info" onclick="topFunction()" id="myBtn" title="Go to top">Go To Top</button>
+<nav class="navbar navbar-default navbar-fixed-top" style="background-color:#1b7dfc;">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">A2Z Shopping Mart</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+		<form class="navbar-form navbar-left" action="">
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="Search" name="search">
+        <div class="input-group-btn">
+          <button class="btn btn-default" style="height: 34px;" type="submit">
+            <a class="glyphicon glyphicon-search "></a>
+          </button>
+        </div>
+      </div>
+    </form>
+	   <ul class="nav navbar-nav navbar-right pull-right">
+         <li><a href="" data-toggle="modal" data-target="#modalsignForm"><span class="glyphicon glyphicon-user white"></span>Sign Up</a></li>
+        <li><a href="" data-toggle="modal" data-target="#modalLoginForm"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+	   
+     
+    </div>
+  </div>
+</nav>
+  <div class="conatiner-fluid" style="padding-top:50px;"> &nbsp;
+	<div class="jumbotron" style="background-color:#7ac2ff;padding-top:50px">
+	<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+	
+      <div class="item active">
+	  <center>
+        <img src="images/car1.jpg" alt="1" width="960" height="345"></center>
+      </div>
+
+      <div class="item">
+	  <center>
+        <img src="images/car3.jpg" alt="2" width="960" height="345"></center>
+      </div>
+    
+      <div class="item">
+	  <center>
+        <img src="images/car1.jpg" alt="3" width="960" height="345"></center>
+      </div>
+
+      <div class="item">
+	  <center>
+        <img src="images/car3.jpg" alt="4" width="960" height="345"></center>
+      </div>
+  
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+  </div>
+  </div>
+<div class="container">
+  <div class="row">
+	<div class="col-md-12">
+	<div class="container">	
+	<div class="container">
+		<div class="col-md-12">
+		<section class="container content-section">
+		<div class="" role="tabpanel" data-example-id="togglable-tabs">
+                      <ul id="myTab" class="nav nav-tabs bar_tabs" role="tablist">
+                        <li role="presentation" class="active"><a href="#tab_content1" id="home-tab" role="tab" data-toggle="tab" aria-expanded="true">Best Offers</a>
+                        </li>
+                        <li role="presentation" class=""><a href="#tab_content2" role="tab" id="profile-tab" data-toggle="tab" aria-expanded="false">Toys</a>
+                        </li>
+						<li role="presentation" class=""><a href="#tab_content3" role="tab" id="profile-tab" data-toggle="tab" aria-expanded="false">Watches</a>
+                        </li>
+						<li role="presentation" class=""><a href="#tab_content2" role="tab" id="profile-tab" data-toggle="tab" aria-expanded="false">Foot Wear</a>
+                        </li>
+						<li role="presentation" class=""><a href="#tab_content2" role="tab" id="profile-tab" data-toggle="tab" aria-expanded="false">Electronics Item</a>
+                        </li>
+                      </ul>
+					  
+			<div id="myTabContent" class="tab-content">
+			<div role="tabpanel" class="tab-pane fade active in" id="tab_content1" aria-labelledby="home-tab">
+			<div class="shop-items">
+			<div class="shop-item">
+                    <span class="shop-item-title">Air Flex Shoe</span>
+                    <img class="shop-item-image img-responsive" style="height:200px;" src="images/11.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">750.00</span>
+						<br>
+                        <button class="btn btn-info shop-item-button" type="button">ADD TO CART</button>
+						<button class="btn btn-info " data-toggle="modal" data-target="#divi1" type="button">Details</button>
+						</br>
+					</div>
+                </div><div class="shop-item">
+                    <span class="shop-item-title">Genuine Watch</span>
+                    <img class="shop-item-image" src="images/22.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">1200.00</span>
+						<br>
+                        <button class="btn btn-info shop-item-button" type="button">ADD TO CART</button>
+						<button class="btn btn-info " data-toggle="modal" data-target="#divi2" type="button">Details</button>
+						</br>
+					</div>
+                </div><div class="shop-item">
+                    <span class="shop-item-title">Classic Black Watch</span>
+                    <img class="shop-item-image" src="images/23.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">400.00</span>
+						<br>
+                        <button class="btn btn-info shop-item-button" type="button">ADD TO CART</button>
+						<button class="btn btn-info " data-toggle="modal" data-target="#divi3" type="button">Details</button>						
+						</br>
+					</div>
+                </div><div class="shop-item">
+                    <span class="shop-item-title">Cool Blue Shoe</span>
+                    <img class="shop-item-image" style="height:200px;" src="images/14.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">2400.00</span>
+						<br>
+                        <button class="btn btn-info shop-item-button" type="button">ADD TO CART</button>
+						<button class="btn btn-info " data-toggle="modal" data-target="#divi4" type="button">Details</button>
+						</br>
+					</div>
+                </div><div class="shop-item">
+                    <span class="shop-item-title">Locman Orangyy</span>
+                    <img class="shop-item-image" src="images/25.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">2000.00</span>
+						<br>
+                        <button class="btn btn-info shop-item-button" type="button">ADD TO CART</button>
+						<button class="btn btn-info" data-toggle="modal" data-target="#divi5" type="button">Details</button>
+						</br>
+					</div>
+                </div><div class="shop-item">
+                    <span class="shop-item-title">Locman Classy</span>
+                    <img class="shop-item-image" src="images/26.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">2400.00</span>
+						<br>
+                        <button class="btn btn-info shop-item-button" type="button">ADD TO CART</button>
+						<button class="btn btn-info "data-toggle="modal" data-target="#divi6" type="button">Details</button>
+						</br>
+					</div>
+                </div>
+			</div>
+			</div>
+			
+			<div role="tabpanel" class="tab-pane fade active in" id="tab_content2" aria-labelledby="home-tab">
+			<div class="shop-items">
+			<div class="shop-item">
+                    <span class="shop-item-title">Dinky Toy</span>
+                    <img class="shop-item-image" src="images/1.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">400.00</span>
+						<br>
+                        <button class="btn btn-info shop-item-button" type="button">ADD TO CART</button>
+						<button class="btn btn-info " data-toggle="modal" data-target="#divi7"type="button">Details</button>
+						</br>
+					</div>
+                </div><div class="shop-item">
+                    <span class="shop-item-title">Power Rangers Genuine</span>
+                    <img class="shop-item-image" src="images/2.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">200.00</span>
+						<br>
+                        <button class="btn btn-info shop-item-button" type="button">ADD TO CART</button>
+						<button class="btn btn-info "data-toggle="modal" data-target="#divi8" type="button">Details</button>
+						</br>
+					</div>
+                </div><div class="shop-item">
+                    <span class="shop-item-title">Pluffy Bunnt</span>
+                    <img class="shop-item-image" src="images/3.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">200.00</span>
+						<br>
+                        <button class="btn btn-info shop-item-button" type="button">ADD TO CART</button>
+						<button class="btn btn-info " data-toggle="modal" data-target="#divi9"type="button">Details</button>
+						</br>
+					</div>
+                </div><div class="shop-item">
+                    <span class="shop-item-title">Toy Kits</span>
+                    <img class="shop-item-image" src="images/4.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">180.00</span>
+						<br>
+                        <button class="btn btn-info shop-item-button" type="button">ADD TO CART</button>
+						<button class="btn btn-info" data-toggle="modal" data-target="#divi10"  type="button">Details</button>
+						</br>
+					</div>
+                </div><div class="shop-item">
+                    <span class="shop-item-title">ToyKit V2.0</span>
+                    <img class="shop-item-image" src="images/5.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">350.00</span>
+						<br>
+                        <button class="btn btn-info shop-item-button" type="button">ADD TO CART</button>
+						<button class="btn btn-info "data-toggle="modal" data-target="#divi11" type="button">Details</button>
+						</br>
+					</div>
+                </div><div class="shop-item">
+                    <span class="shop-item-title">Strange Toy Car</span>
+                    <img class="shop-item-image" src="images/9.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">460.00</span>
+						<br>
+                        <button class="btn btn-info shop-item-button" type="button">ADD TO CART</button>
+						<button class="btn btn-info "data-toggle="modal" data-target="#divi12" type="button">Details</button>
+						</br>
+					</div>
+                </div>
+			</div>
+			</div>
+			<div role="tabpanel" class="tab-pane fade active in" id="tab_content3" aria-labelledby="home-tab">
+			<div class="shop-items">
+			<div class="shop-item">
+                    <span class="shop-item-title">LS Leather Watch</span>
+                    <img class="shop-item-image" src="images/19.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">2400.00</span>
+						<br>
+                        <button class="btn btn-info shop-item-button" type="button">ADD TO CART</button>
+						<button class="btn btn-info " data-toggle="modal" data-target="#divi13" type="button">Details</button>
+						</br>
+					</div>
+                </div><div class="shop-item">
+                    <span class="shop-item-title">Locman Italy</span>
+                    <img class="shop-item-image" src="images/20.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">2000.00</span>
+						<br>
+                        <button class="btn btn-info shop-item-button" type="button">ADD TO CART</button>
+						<button class="btn btn-info " data-toggle="modal" data-target="#divi14" type="button">Details</button>
+						</br>
+					</div>
+                </div><div class="shop-item">
+                    <span class="shop-item-title">Tissot Genuine</span>
+                    <img class="shop-item-image" src="images/21.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">3000.00</span>
+						<br>
+                        <button class="btn btn-info shop-item-button" type="button">ADD TO CART</button>
+						<button class="btn btn-info " data-toggle="modal" data-target="#divi15"type="button">Details</button>
+						</br>
+					</div>
+                </div><div class="shop-item">
+                    <span class="shop-item-title">Genuine Watch</span>
+                    <img class="shop-item-image" src="images/22.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">2400.00</span>
+						<br>
+                        <button class="btn btn-info shop-item-button" type="button">ADD TO CART</button>
+						<button class="btn btn-info " data-toggle="modal" data-target="#divi16" type="button">Details</button>
+						</br>
+					</div>
+                </div><div class="shop-item">
+                    <span class="shop-item-title">Classic Black</span>
+                    <img class="shop-item-image" src="images/23.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">2400.00</span>
+						<br>
+                        <button class="btn btn-info shop-item-button" type="button">ADD TO CART</button>
+						<button class="btn btn-info "  data-toggle="modal" data-target="#divi17"type="button">Details</button>
+						</br>
+					</div>
+                </div><div class="shop-item">
+                    <span class="shop-item-title">Sporty Watch</span>
+                    <img class="shop-item-image" src="images/24.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">2000.00</span>
+						<br>
+                        <button class="btn btn-info shop-item-button" type="button">ADD TO CART</button>
+						<button class="btn btn-info " data-toggle="modal" data-target="#divi18" type="button">Details</button>
+						</br>
+					</div>
+                </div>
+			</div>
+	
+	</div>
+	</div>
+	</section>
+	<section class="container content-section">
+            <h2 class="header center">CART</h2>
+            <div class="cart-row">
+                <span class="cart-item cart-header cart-column">ITEM</span>
+                <span class="cart-price cart-header cart-column">PRICE</span>
+                <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+            </div>
+            <div class="cart-items">
+            </div>
+            <div class="cart-total">
+                <strong class="cart-total-title">Total</strong>
+                <span style="color: green; font-size: 30pt" class="cart-total-price"> 0</span>
+            </div>
+            <!--- <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button> ---->
+			<a class="btn btn-primary" href="" data-toggle="modal" data-target="#modalpurchaseForm">purchase</a>
+        </section>
+  </div>
+  <div class="modal fade" role="dialog" id="maj">
+	<div class="modal-dialog">
+		<div class="modal-content">
+				<div class="modal-body">
+					<img src='' id="modal-img" height="100%" width="100%">
+				</div>
+		</div>
+	</div>
+  </div>
+   <!-- footer -->
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+  <footer>
+		<div class="row ">
+			<div class="col-lg-12 pull-right">
+				<p><b>Copyright &copy; A2Z Shopping Mart</b></p>
+			</div>
+		</div>
+	</footer>
+	
+</div>
+</div>
+</div>
+
+
+<!-- description modal Starts -->
+<div class="modal fade" id="divi1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title font-weight-bold">Product Description</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+	  <div class="row">
+		<div class="container">
+			<div class="row">
+			<div class="col-md-8 well">
+			<center>
+			<img style="height:250px;" class="images1" src="images/11.jpg"></img>
+			</center></div>
+			<div class="col-md-6">
+			<p><h2>Air Flex Shoe</h2></p>
+			<h4></label>Price in INR:</label></h4> <p><h1><i class="fa fa-inr" aria-hidden="true">Rs.750.00 </i></h1></p> 
+			<p class="text-success"><strong>In stock</strong></p>
+			<br><h4></label>Description:</label></h4> <h5><p></p>
+
+			<p><b>Color:</b>Rea & White</p>
+			<p><b>Inner Material:</b>Mesh,Leather</p>
+			<p><b>Outer Material:</b>Textile</p>
+			<p><b>Ideal For :</b>Men</p>
+			<p><b>Closure:</b>Lace Ups</p>
+			<p><b>Weight:</b>250 g (per single Shoe)</p>
+
+			
+			</div>
+			</div>
+		</div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="divi2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title font-weight-bold">Product Description</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+	  <div class="row">
+		<div class="container">
+			<div class="row">
+			<div class="col-md-8 well">
+			<center>
+			<img class="images1" src="images/22.jpg"></img>
+			</center></div>
+			<div class="col-md-6">
+			<p><h2>Genuine Watch</h2></p>
+			<h4></label>Price in INR:</label></h4> <p><h1><i class="fa fa-inr" aria-hidden="true">Rs. 1200.00 </i></h1></p> 
+			<p class="text-success"><strong>In stock</strong></p>
+			<br><h4></label>Description:</label></h4> <h5><p> Warranty: 2 year</p>
+			<p><b>Color:</b>Khaki</p>
+			<p><b>Water Resistance:</b>Yes</p>
+			<p><b>Display Type:</b>Analog</p>
+			<p><b>Ideal For :</b>Men</p>
+			<p><b>Type:</b>Wrist Watch</p>
+			<p><b>Weight:</b>720 g</p>
+			<p><b>Sales Package:</b> 1 Box, 1 Watch, 1 Warranty Card With Serial Number, 1 Warranty Term Sheet, 1 User Manual</p>
+			
+
+			
+			</div>
+			</div>
+		</div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="divi3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title font-weight-bold">Product Description</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+	  <div class="row">
+		<div class="container">
+			<div class="row">
+			<div class="col-md-8 well">
+			<center>
+			<img class="images1" src="images/23.jpg"></img>
+			</center></div>
+			<div class="col-md-6">
+			<p><h2>Classic Black Watch</h2></p>
+			<h4></label>Price in INR:</label></h4> <p><h1><i class="fa fa-inr" aria-hidden="true">Rs. 400.00 </i></h1></p> 
+			<p class="text-success"><strong>In stock</strong></p>
+			<br><h4></label>Description:</label></h4> <h5><p> Warranty: 1 year</p>
+			<p><b>Color:</b>Black</p>
+			<p><b>Water Resistance:</b>Yes</p>
+			<p><b>Display Type:</b>Analog</p>
+			<p><b>Ideal For :</b>Men</p>
+			<p><b>Type:</b>Wrist Watch</p>
+			<p><b>Weight:</b>520 g</p>
+			<p><b>Sales Package:</b> 1 Box, 1 Watch, 1 Warranty Card With Serial Number, 1 Warranty Term Sheet, 1 User Manual</p>
+			
+			</div>
+			</div>
+		</div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="divi4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title font-weight-bold">Product Description</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+	  <div class="row">
+		<div class="container">
+			<div class="row">
+			<div class="col-md-8 well">
+			<center>
+			<img class="images1" src="images/14.jpg"></img>
+			</center></div>
+			<div class="col-md-6">
+			<p><h2>Cool Blue Shoe</h2></p>
+			<h4></label>Price in INR:</label></h4> <p><h1><i class="fa fa-inr" aria-hidden="true">Rs.2400.00 </i></h1></p> 
+			<p class="text-success"><strong>In stock</strong></p>
+			<br><h4></label>Description:</label></h4> <h5><p></p>
+			<p><b>Color:</b>Sky Blue</p>
+			<p><b>Inner Material:</b>Mesh,Leather</p>
+			<p><b>Outer Material:</b>Leather</p>
+			<p><b>Ideal For :</b>Men</p>
+			<p><b>Closure:</b>Lace Ups</p>
+			<p><b>Weight:</b>350 g (per single Shoe)</p>
+			</div>
+			</div>
+		</div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="divi5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title font-weight-bold">Product Description</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+	  <div class="row">
+		<div class="container">
+			<div class="row">
+			<div class="col-md-8 well">
+			<center>
+			<img class="images1" src="images/25.jpg"></img>
+			</center></div>
+			<div class="col-md-6">
+			<p><h2>Locman Orangyy</h2></p>
+			<h4></label>Price in INR:</label></h4> <p><h1><i class="fa fa-inr" aria-hidden="true">Rs. 2000.00 </i></h1></p> 
+			<p class="text-success"><strong>In stock</strong></p>
+			<br><h4></label>Description:</label></h4> <h5><p> Warranty: 1 year</p>
+			<p><b>Color:</b>Orange</p>
+			<p><b>Water Resistance:</b>Yes</p>
+			<p><b>Display Type:</b>Analog</p>
+			<p><b>Ideal For :</b>Men</p>
+			<p><b>Type:</b>Wrist Watch</p>
+			<p><b>Weight:</b>520 g</p>
+			<p><b>Sales Package:</b> 1 Box, 1 Watch, 1 Warranty Card With Serial Number, 1 Warranty Term Sheet, 1 User Manual</p>
+			
+			</div>
+			</div>
+		</div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="divi6" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title font-weight-bold">Product Description</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+	  <div class="row">
+		<div class="container">
+			<div class="row">
+			<div class="col-md-8 well">
+			<center>
+			<img class="images1" src="images/26.jpg"></img>
+			</center></div>
+			<div class="col-md-6">
+			<p><h2>Locman Classy</h2></p>
+			<h4></label>Price in INR:</label></h4> <p><h1><i class="fa fa-inr" aria-hidden="true">Rs. 2400.00 </i></h1></p> 
+			<p class="text-success"><strong>In stock</strong></p>
+			<br><h4></label>Description:</label></h4> <h5><p> Warranty: 2 year</p>
+			<p><b>Color:</b>Blue</p>
+			<p><b>Water Resistance:</b>Yes</p>
+			<p><b>Display Type:</b>Analog</p>
+			<p><b>Ideal For :</b>Men</p>
+			<p><b>Type:</b>Wrist Watch</p>
+			<p><b>Weight:</b>520 g</p>
+			<p><b>Sales Package:</b> 1 Box, 1 Watch, 1 Warranty Card With Serial Number, 1 Warranty Term Sheet, 1 User Manual</p>
+			
+			</div>
+			</div>
+		</div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="divi7" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title font-weight-bold">Product Description</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+	  <div class="row">
+		<div class="container">
+			<div class="row">
+			<div class="col-md-8 well">
+			<center>
+			<img class="images1" src="images/1.jpg"></img>
+			</center></div>
+			<div class="col-md-6">
+			<p><h2>Dinky Toy</h2></p>
+			<h4></label>Price in INR:</label></h4> <p><h1><i class="fa fa-inr" aria-hidden="true">Rs. 400.00 </i></h1></p> 
+			<p class="text-success"><strong>In stock</strong></p>
+			<br><h4></label>Description:</label></h4> <h5><p> </p>
+			<p><b>Color:</b>Brown and Green</p>
+			<p><b>Type:</b>Toy Car</p>
+			<p><b>Minimum Age:</b>3 Years</p>
+			<p><b>Ideal For :</b>Children above 3 years</p>
+			<p><b>Material Used:</b>Plastic</p>
+			<p><b>Battery Used:</b>Yes</p>
+			<p><b>Weight:</b>880 g</p>
+			<p><b>Remote Operated:</b>Yes</p>			
+			</div>
+			</div>
+		</div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="divi8" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title font-weight-bold">Product Description</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+	  <div class="row">
+		<div class="container">
+			<div class="row">
+			<div class="col-md-8 well">
+			<center>
+			<img class="images1" src="images/2.jpg"></img>
+			</center></div>
+			<div class="col-md-6">
+			<p><h2>Power Rangers Genuine</h2></p>
+			<h4></label>Price in INR:</label></h4> <p><h1><i class="fa fa-inr" aria-hidden="true">Rs. 2400.00 </i></h1></p> 
+			<p class="text-success"><strong>In stock</strong></p>
+			<br><h4></label>Description:</label></h4> <h5><p> </p>
+			<p><b>Color:</b>Mixed</p>
+			<p><b>Type:</b>Cartoon Characters</p>
+			<p><b>Minimum Age:</b>3 Years</p>
+			<p><b>Ideal For :</b>Children above 3 years</p>
+			<p><b>Material Used:</b>Plastic</p>
+			<p><b>Battery used:</b>Yes</p>
+			<p><b>Weight:</b>880 g</p>
+			<p><b>Remote Operated:</b>No</p>			
+			</div>
+			</div>
+		</div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="divi9" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title font-weight-bold">Product Description</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+	  <div class="row">
+		<div class="container">
+			<div class="row">
+			<div class="col-md-8 well">
+			<center>
+			<img class="images1" src="images/3.jpg"></img>
+			</center></div>
+			<div class="col-md-6">
+			<p><h2>Pluffy Bunny</h2></p>
+			<h4></label>Price in INR:</label></h4> <p><h1><i class="fa fa-inr" aria-hidden="true">Rs. 200.00 </i></h1></p> 
+			<p class="text-success"><strong>In stock</strong></p>
+			<br><h4></label>Description:</label></h4> <h5><p> </p>
+			<p><b>Color:</b>Brown and Green</p>
+			<p><b>Type:</b>Animal toy</p>
+			<p><b>Minimum Age:</b>1 Years</p>
+			<p><b>Ideal For :</b>Children above 1 years</p>
+			<p><b>Material Used:</b>Textile</p>
+			<p><b>Battery used:</b>No</p>
+			<p><b>Weight:</b>150 g</p>
+			<p><b>Remote Operated:</b>no</p>			
+			</div>
+			</div>
+		</div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="divi10" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title font-weight-bold">Product Description</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+	  <div class="row">
+		<div class="container">
+			<div class="row">
+			<div class="col-md-8 well">
+			<center>
+			<img class="images1" src="images/4.jpg"></img>
+			</center></div>
+			<div class="col-md-6">
+			<p><h2>Toy Kits</h2></p>
+			<h4></label>Price in INR:</label></h4> <p><h1><i class="fa fa-inr" aria-hidden="true">Rs. 400.00 </i></h1></p> 
+			<p class="text-success"><strong>In stock</strong></p>
+			<br><h4></label>Description:</label></h4> <h5><p> </p>
+			<p><b>Color:</b>Mixed</p>
+			<p><b>Type:</b>Toy</p>
+			<p><b>Minimum Age:</b>3 Years</p>
+			<p><b>Ideal For :</b>Children above 3 years</p>
+			<p><b>Material Used:</b>Plastic</p>
+			<p><b>Battery Used:</b>No</p>
+			<p><b>Weight:</b>880 g</p>
+			<p><b>Remote Operated:</b>No</p>			
+			</div>
+			</div>
+		</div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="divi11" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title font-weight-bold">Product Description</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+	  <div class="row">
+		<div class="container">
+			<div class="row">
+			<div class="col-md-8 well">
+			<center>
+			<img class="images1" src="images/5.jpg"></img>
+			</center></div>
+			<div class="col-md-6">
+			<p><h2>ToyKit V2.0</h2></p>
+			<h4></label>Price in INR:</label></h4> <p><h1><i class="fa fa-inr" aria-hidden="true">Rs. 350.00 </i></h1></p> 
+			<p class="text-success"><strong>In stock</strong></p>
+			<br><h4></label>Description:</label></h4> <h5><p> </p>
+			<p><b>Color:</b>Brown and Green</p>
+			<p><b>Type:</b>Toy </p>
+			<p><b>Minimum Age:</b>3 Years</p>
+			<p><b>Ideal For :</b>Children above 3 years</p>
+			<p><b>Material Used:</b>Plastic</p>
+			<p><b>Battery Used:</b>No</p>
+			<p><b>Weight:</b>680 g</p>
+			<p><b>Remote Operated:</b>No</p>			
+			</div>
+			</div>
+		</div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="divi12" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title font-weight-bold">Product Description</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+	  <div class="row">
+		<div class="container">
+			<div class="row">
+			<div class="col-md-8 well">
+			<center>
+			<img class="images1" src="images/9.jpg"></img>
+			</center></div>
+			<div class="col-md-6">
+			<p><h2>Strange Toy Car</h2></p>
+			<h4></label>Price in INR:</label></h4> <p><h1><i class="fa fa-inr" aria-hidden="true">Rs. 460.00 </i></h1></p> 
+			<p class="text-success"><strong>In stock</strong></p>
+			<br><h4></label>Description:</label></h4> <h5><p> </p>
+			<p><b>Color:</b>Mixed</p>
+			<p><b>Type:</b>Toy Car</p>
+			<p><b>Minimum Age:</b>3 Years</p>
+			<p><b>Ideal For :</b>Children above 3 years</p>
+			<p><b>Material Used:</b>Plastic</p>
+			<p><b>Battery Used:</b>No</p>
+			<p><b>Weight:</b>880 g</p>
+			<p><b>Remote Operated:</b>No</p>			
+			</div>
+			</div>
+		</div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="divi13" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title font-weight-bold">Product Description</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+	  <div class="row">
+		<div class="container">
+			<div class="row">
+			<div class="col-md-8 well">
+			<center>
+			<img class="images1" src="images/19.jpg"></img>
+			</center></div>
+			<div class="col-md-6">
+			<p><h2>LS Leather Watch</h2></p>
+			<h4></label>Price in INR:</label></h4> <p><h1><i class="fa fa-inr" aria-hidden="true">Rs. 2400.00 </i></h1></p> 
+			<p class="text-success"><strong>In stock</strong></p>
+			<br><h4></label>Description:</label></h4> <h5><p> Warranty: 1 year</p>
+			<p><b>Color:</b>Orange</p>
+			<p><b>Water Resistance:</b>Yes</p>
+			<p><b>Display Type:</b>Analog</p>
+			<p><b>Ideal For :</b>Men</p>
+			<p><b>Type:</b>Wrist Watch</p>
+			<p><b>Weight:</b>520 g</p>
+			<p><b>Sales Package:</b> 1 Box, 1 Watch, 1 Warranty Card With Serial Number, 1 Warranty Term Sheet, 1 User Manual</p>
+			
+			</div>
+			</div>
+		</div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="divi14" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title font-weight-bold">Product Description</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+	  <div class="row">
+		<div class="container">
+			<div class="row">
+			<div class="col-md-8 well">
+			<center>
+			<img class="images1" src="images/20.jpg"></img>
+			</center></div>
+			<div class="col-md-6">
+			<p><h2>Locman Italy</h2></p>
+			<h4></label>Price in INR:</label></h4> <p><h1><i class="fa fa-inr" aria-hidden="true">Rs. 2000.00 </i></h1></p> 
+			<p class="text-success"><strong>In stock</strong></p>
+			<br><h4></label>Description:</label></h4> <h5><p> Warranty: 1 year</p>
+			<p><b>Color:</b>Blue</p>
+			<p><b>Water Resistance:</b>Yes</p>
+			<p><b>Display Type:</b>Analog</p>
+			<p><b>Ideal For :</b>Men</p>
+			<p><b>Type:</b>Wrist Watch</p>
+			<p><b>Weight:</b>520 g</p>
+			<p><b>Sales Package:</b> 1 Box, 1 Watch, 1 Warranty Card With Serial Number, 1 Warranty Term Sheet, 1 User Manual</p>
+			
+			</div>
+			</div>
+		</div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="divi15" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title font-weight-bold">Product Description</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+	  <div class="row">
+		<div class="container">
+			<div class="row">
+			<div class="col-md-8 well">
+			<center>
+			<img class="images1" src="images/21.jpg"></img>
+			</center></div>
+			<div class="col-md-6">
+			<p><h2>Tissot Genuine</h2></p>
+			<h4></label>Price in INR:</label></h4> <p><h1><i class="fa fa-inr" aria-hidden="true">Rs. 3000.00 </i></h1></p> 
+			<p class="text-success"><strong>In stock</strong></p>
+			<br><h4></label>Description:</label></h4> <h5><p> Warranty: 2 year</p>
+			<p><b>Color:</b>Silver</p>
+			<p><b>Water Resistance:</b>Yes</p>
+			<p><b>Display Type:</b>Analog</p>
+			<p><b>Ideal For :</b>Men</p>
+			<p><b>Type:</b>Wrist Watch</p>
+			<p><b>Weight:</b>520 g</p>
+			<p><b>Sales Package:</b> 1 Box, 1 Watch, 1 Warranty Card With Serial Number, 1 Warranty Term Sheet, 1 User Manual</p>
+			
+			</div>
+			</div>
+		</div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="divi16" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title font-weight-bold">Product Description</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+	  <div class="row">
+		<div class="container">
+			<div class="row">
+			<div class="col-md-8 well">
+			<center>
+			<img class="images1" src="images/22.jpg"></img>
+			</center></div>
+			<div class="col-md-6">
+			<p><h2>Genuine Watch</h2></p>
+			<h4></label>Price in INR:</label></h4> <p><h1><i class="fa fa-inr" aria-hidden="true">Rs. 2400.00 </i></h1></p> 
+			<p class="text-success"><strong>In stock</strong></p>
+			<br><h4></label>Description:</label></h4> <h5><p> Warranty: 2 year</p>
+			<p><b>Color:</b>Green</p>
+			<p><b>Water Resistance:</b>Yes</p>
+			<p><b>Display Type:</b>Analog</p>
+			<p><b>Ideal For :</b>Men</p>
+			<p><b>Type:</b>Wrist Watch</p>
+			<p><b>Weight:</b>520 g</p>
+			<p><b>Sales Package:</b> 1 Box, 1 Watch, 1 Warranty Card With Serial Number, 1 Warranty Term Sheet, 1 User Manual</p>
+			
+			</div>
+			</div>
+		</div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="divi17" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title font-weight-bold">Product Description</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+	  <div class="row">
+		<div class="container">
+			<div class="row">
+			<div class="col-md-8 well">
+			<center>
+			<img class="images1" src="images/23.jpg"></img>
+			</center></div>
+			<div class="col-md-6">
+			<p><h2>Classic Black</h2></p>
+			<h4></label>Price in INR:</label></h4> <p><h1><i class="fa fa-inr" aria-hidden="true">Rs. 2400.00 </i></h1></p> 
+			<p class="text-success"><strong>In stock</strong></p>
+			<br><h4></label>Description:</label></h4> <h5><p> Warranty: 1 year</p>
+			<p><b>Color:</b>Black</p>
+			<p><b>Water Resistance:</b>Yes</p>
+			<p><b>Display Type:</b>Analog</p>
+			<p><b>Ideal For :</b>Men</p>
+			<p><b>Type:</b>Wrist Watch</p>
+			<p><b>Weight:</b>520 g</p>
+			<p><b>Sales Package:</b> 1 Box, 1 Watch, 1 Warranty Card With Serial Number, 1 Warranty Term Sheet, 1 User Manual</p>
+			
+			</div>
+			</div>
+		</div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="divi18" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title font-weight-bold">Product Description</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+	  <div class="row">
+		<div class="container">
+			<div class="row">
+			<div class="col-md-8 well">
+			<center>
+			<img class="images1" src="images/24.jpg"></img>
+			</center></div>
+			<div class="col-md-6">
+			<p><h2>Sporty Watch</h2></p>
+			<h4></label>Price in INR:</label></h4> <p><h1><i class="fa fa-inr" aria-hidden="true">Rs. 2000.00 </i></h1></p> 
+			<p class="text-success"><strong>In stock</strong></p>
+			<br><h4></label>Description:</label></h4> <h5><p> Warranty: 1 year</p>
+			<p><b>Color:</b>Mixed</p>
+			<p><b>Water Resistance:</b>Yes</p>
+			<p><b>Display Type:</b>Analog</p>
+			<p><b>Ideal For :</b>Men</p>
+			<p><b>Type:</b>Wrist Watch</p>
+			<p><b>Weight:</b>520 g</p>
+			<p><b>Sales Package:</b> 1 Box, 1 Watch, 1 Warranty Card With Serial Number, 1 Warranty Term Sheet, 1 User Manual</p>
+			
+			</div>
+			</div>
+		</div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+<!-- description modal endsss -->
+
+<!-- Sign in modal -->
+<div class="modal fade" id="modalsignForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title font-weight-bold">SignIn</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+	  <form>
+        <div class="md-form">
+		  <label data-error="wrong" data-success="right" for="defaultForm-email">Name</label>
+          <input type="text" id="defaultForm-email" class="form-control validate" placeholder="Enter your Name">
+        </div>
+		<div class="md-form">
+		   <label data-error="wrong" data-success="right" for="defaultForm-pass">Set password</label>
+          <input type="password" id="defaultForm-pass" class="form-control validate" placeholder="Set your Password">
+        </div>
+		<div class="md-form">
+		  <label data-error="wrong" data-success="right" for="defaultForm-email">Email:</label>
+          <input type="email" id="defaultForm-email" class="form-control validate" placeholder="Enter your Email">
+        </div>
+		<div class="md-form">
+		  <label data-error="wrong" data-success="right" for="defaultForm-email">Address 1</label>
+          <input type="textarea" id="defaultForm-email" class="form-control validate" placeholder="Enter your Address 1">
+        </div>
+		<div class="md-form">
+		  <label data-error="wrong" data-success="right" for="defaultForm-email">Address 2</label>
+          <input type="textarea" id="defaultForm-email" class="form-control validate" placeholder="Enter your Address 2">
+        </div>
+		<div class="md-form">
+		  <label data-error="wrong" data-success="right" for="defaultForm-email">City </label>
+          <input type="text" id="defaultForm-email" class="form-control validate" placeholder="Enter your City">
+        </div>
+		<div class="md-form">
+		  <label data-error="wrong" data-success="right" for="defaultForm-email">Contact no. </label>
+          <input type="number" id="defaultForm-email" class="form-control validate" placeholder="Enter your Contact Number">
+        </div>
+
+      </div>
+      <div class="modal-footer justify-content-center">
+        <button class="btn btn-success">Login</button>
+      </div>
+	  </form>
+    </div>
+  </div>
+</div>
+
+			
+				
+				
+
+<div class="modal fade" id="modalpurchaseForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title font-weight-bold">SignIn</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+	  <form>
+        <div class="md-form">
+		  <label data-error="wrong" data-success="right" for="defaultForm-email">Name</label>
+          <input type="text" id="UserDetail-name" class="form-control validate"  placeholder="Enter your Name">
+        </div>
+		<div class="md-form">
+		  <label data-error="wrong" data-success="right" for="defaultForm-email">Email:</label>
+          <input type="email" id="UserDetail-email" class="form-control validate" placeholder="Enter your Email">
+        </div>
+		<div class="md-form">
+		  <label data-error="wrong" data-success="right" for="defaultForm-email">Address:</label>
+          <input type="textarea" id="UserDetail-address"class="form-control validate" placeholder="Enter your Address">
+        </div>
+		<div class="md-form">
+		  <label data-error="wrong" data-success="right" for="defaultForm-email">City :</label>
+          <input type="text" id="UserDetail-city" class="form-control validate"placeholder="Enter your City">
+        </div>
+		<div class="md-form">
+		  <label data-error="wrong" data-success="right" for="defaultForm-email">Contact no. :</label>
+          <input type="number" id="UserDetail-contact"class="form-control validate" placeholder="Enter your Contact Number">
+        </div>
+		<br>
+		<br>
+		<br>
+		<div class="well">
+		<center>
+		<label><center><u><b>Payment Details</b></u><center></label>
+		<br>
+		<br>
+		<br>
+		<div class="md-form">
+		  <label data-error="wrong" data-success="right" for="defaultForm-email">Name On Card :</label>
+          <input type="text" id="UserDetail-cardname"class="form-control validate" placeholder="Enter your name on card">
+        </div>
+		<br>
+		<div class="md-form">
+		  <label data-error="wrong" data-success="right" for="defaultForm-email">card Number :</label>
+          <input type="number" id="UserDetail-cardnum"class="form-control validate" placeholder="XXXX XXXX XXXX XXXX">
+        </div><br>
+		<div class="md-form">
+		  <label data-error="wrong" data-success="right" for="defaultForm-email">Exp Month/Year:</label>
+          <input type="Text" id="UserDetail-cardexp"class="form-control validate" placeholder="MM/YYYY">
+        </div>
+		<div class="md-form"><br>
+		  <label data-error="wrong" data-success="right" for="defaultForm-email">CVV :</label>
+          <input type="number" id="UserDetail-cardcvv"class="form-control validate"  placeholder="Enter your cvv">
+        </div>
+		</center>
+		</div>
+      </div>
+      <div class="modal-footer justify-content-center">
+        <button type="submit" data-toggle="modal" data-target="#modalLoginForm" onclick="UserDetail();" class="btn btn-success">Submit</button>
+      </div>
+	  </form>
+    </div>
+  </div>
+</div>
+<!-- Log In modal -->
+<div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Modal Methods</h4>
+        </div>
+        <div class="modal-body">
+          <p>The <strong>show</strong> method shows the modal and the <strong>hide</strong> method hides the modal.</p>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+<div class="modal fade" id="modalLoginForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title font-weight-bold">Log In</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="md-form">
+		  <label data-error="wrong" data-success="right" for="defaultForm-email">Your email</label>
+          <input type="email" id="defaultForm-email" class="form-control validate" placeholder="Enter your Email">
+          
+        </div>
+
+        <div class="md-form">
+		   <label data-error="wrong" data-success="right" for="defaultForm-pass">Your password</label>
+          <input type="password" id="defaultForm-pass" class="form-control validate" placeholder="Enter your Password">
+         
+        </div>
+
+      </div>
+      <div class="modal-footer justify-content-center">
+        <button class="btn btn-success">Login</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/function.js" ></script>
+
+</body>
+</html>
